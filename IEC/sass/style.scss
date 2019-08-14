@@ -10,8 +10,39 @@
 
 @import "partials/colors";
 @import "partials/basics";
+// homeopage only
+ body.home, body.page-id-250 {
+  #main-header {
+   background-color: transparent;
+    box-shadow: none;
+    //background-color: rgba(255, 255, 255, 0.65)
+  }
+  #et-main-area {
+
+     margin-top: -170px;
+  }
+}
+
+// header
+ #main-header {
+  #et-top-navigation {
+    #top-menu-nav {
+      ul#top-menu {
+        // want an underline under menu so needed to scale back height, add margin.
+       height: 30px;
+        margin-bottom: 62px;
+        border-bottom: 2px solid $iec-lime;
+      }
+    }
+  }
+}
 
 
-
+// styling used on homepage columns
+.iec-home-column {
+  padding-top: 0px;
+  background-color: white;
+  box-shadow: 10px 10px 16px 0px #afaeae;
+}
 
 @import "partials/media"; // keep at bottom;

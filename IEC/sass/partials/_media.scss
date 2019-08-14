@@ -2,7 +2,21 @@
 // Divi breakpts
 // mobile menu shows at max-width:
 
-@media all and (max-width: 980px) { // woo stuff
+@media all and (max-width: 980px) { // woo stuff & hamberger menu
+  // size of logo at laptop and smaller
+  #main-header {
+    height: 120px; // pushes bkg image down.
+    .logo_container {
+      height: 120px;
+        #logo {
+          height: 120px;
+          max-height: 120px;
+          max-width: -moz-max-content;    /* Firefox/Gecko */
+          max-width: fit-content;
+          max-width: 220px;
+        }
+    }
+  }
 }
 @media only screen and (max-width: 960px) {
 
@@ -11,5 +25,5 @@
 
 }
 
-@media all and (max-width: 479px) { 
+@media all and (max-width: 479px) {
 }
