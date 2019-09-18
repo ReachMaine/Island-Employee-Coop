@@ -21,9 +21,26 @@
 @media only screen and (max-width: 960px) {
 
 }
-@media only all  and (max-width: 767px) {
-
+@media only all  and (max-width: 767px) and (min-width: 480px) {
+  .et_pb_tabs.iec-tab-image-spacing {
+  	.et_pb_tab_content {
+  		img {
+        max-width: 50%;
+        margin-bottom: 20px;
+      }
+    }
+  }
 }
 
 @media all and (max-width: 479px) {
+  .et_pb_tabs.iec-tab-image-spacing {
+  	.et_pb_tab_content {
+      img {
+        margin-bottom: 20px;
+      }
+      h6 {
+        clear: both;
+      }
+  	}
+  }
 }
