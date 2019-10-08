@@ -36,7 +36,21 @@
 
 // header
  #main-header {
-
+   #top-menu-nav #top-menu {
+     li.menu-item-has-children > a {
+         padding-bottom: 20px;
+       }
+    ul.sub-menu {
+      li.menu-item {
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 100%;
+        a {
+          width: 100%;
+        }
+      }
+    }
+   }
 }
 
 
