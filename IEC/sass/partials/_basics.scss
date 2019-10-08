@@ -1,8 +1,21 @@
 // also see media
-// make map full height of column 
+// make map full height of column
 .iec-map-colht.et_pb_map_container {
   height: 100%;
   .et_pb_map {
     height: 100%;
   }
+}
+  .et_pb_posts .et_pb_post {
+
+    a.more-link {
+      color: $iec-dk-blue;
+      border: 3px solid $iec-lime;
+      padding: 6px 20px;
+      float: right;
+    }
+    a.more-link:hover {
+      color: white!important;
+      background-color: $iec-lime;
+    }
 }

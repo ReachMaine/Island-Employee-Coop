@@ -13,6 +13,15 @@
   .iec-map-colht.et_pb_map_container .et_pb_map {
     height: 100%; }
 
+.et_pb_posts .et_pb_post a.more-link {
+  color: #02345d;
+  border: 3px solid #95b94d;
+  padding: 6px 20px;
+  float: right; }
+.et_pb_posts .et_pb_post a.more-link:hover {
+  color: white !important;
+  background-color: #95b94d; }
+
 body.home #main-header, body.page-id-250 #main-header {
   background-color: transparent;
   box-shadow: none; }
@@ -29,6 +38,12 @@ body.home #et-main-area, body.page-id-250 #et-main-area {
   box-shadow: 10px 10px 16px 0px #afaeae; }
 
 /* **** media **** */
+@media only screen and (min-width: 600px) {
+  .et_pb_posts .et_pb_post img,
+  .et_pb_posts .et_overlay {
+    width: 40%;
+    float: left;
+    margin-right: 30px; } }
 @media all and (max-width: 980px) {
   #main-header {
     height: 120px; }

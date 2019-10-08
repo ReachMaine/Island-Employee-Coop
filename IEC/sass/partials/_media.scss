@@ -2,6 +2,14 @@
 // Divi breakpts
 // mobile menu shows at max-width:
 
+@media only screen and (min-width: 600px) {
+  .et_pb_posts .et_pb_post img,
+  .et_pb_posts .et_overlay {
+    width: 40%;
+    float: left;
+    margin-right: 30px;
+  }
+}
 @media all and (max-width: 980px) { // woo stuff & hamberger menu
   // size of logo at laptop and smaller
   #main-header {

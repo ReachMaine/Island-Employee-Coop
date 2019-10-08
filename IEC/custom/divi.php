@@ -21,3 +21,18 @@ if ( ! function_exists( 'et_get_footer_credits' ) ) {
   	return et_get_safe_localization( sprintf( $credits_format, $footer_credits, 'div' ) );
   }
 }
+
+// Begin custom image size for Blog Module
+add_filter( 'et_pb_blog_image_height', 'blog_size_h' );
+add_filter( 'et_pb_blog_image_width', 'blog_size_w' );
+
+function blog_size_h($height) {
+	return '200';
+}
+
+function blog_size_w($width) {
+	return '200';
+}
+
+add_image_size( 'custom-blog-size', 200, 200, true );
+// End custom image size for Blog Module
