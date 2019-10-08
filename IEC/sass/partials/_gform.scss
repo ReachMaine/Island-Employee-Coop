@@ -2,18 +2,21 @@
 .gform_wrapper {
 	.gform_footer {
 
-		input[type=submit] { //  Submit & save for later  look like buttons on the site.
-			  color: white;
+		input[type=submit] { //  Make submit look like buttons on the site.
+				float: right;
+			  color: $iec-dk-blue;
+				border: 3px solid $iec-lime!important;
 		    padding: 6px 20px;
 		    border-width: 0px;
 		    font-size: 20px!important;
 		    text-align: center;
 		    cursor: pointer;
-				background-color: $ats_orange;
+				background-color: white;
 				//line-height: 1.7em;
 			}
-			.gform_save_link {
-				border-width: 2px;
+			input[type=submit]:hover {
+				background-color: $iec-lime;
+				color: white;
 			}
 	} // gform footer
 } // gform wrapper
