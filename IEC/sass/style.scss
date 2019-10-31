@@ -35,10 +35,11 @@
 }
 
 // header
- #main-header {
+#main-header {
    #top-menu-nav #top-menu {
      li.menu-item-has-children > a {
-         padding-bottom: 20px;
+         //padding-bottom: 20px;
+         padding-bottom: 17px;
        }
     ul.sub-menu {
       li.menu-item {
@@ -51,7 +52,20 @@
       }
     }
    }
-}
+  #et_mobile_nav_menu {
+    #mobile_menu_bar {
+      padding-bottom: 60px;
+    }
+    #mobile_menu a {
+      font-weight: 400;
+      background-color: white;
+    }
+    #mobile_menu li.current_page_item a {
+      color: $iec-lime;
+    }
+  }
+
+} // main-header
 
 
 // styling used on homepage columns
@@ -61,4 +75,28 @@
   box-shadow: 10px 10px 16px 0px #afaeae;
 }
 
+
+#footer-bottom {
+  #footer-info {
+    width: 100%;
+    .reach-copyright {
+      float: left;
+    }
+    .reach-branding {
+      float: right;
+
+      a:before {
+        content: url('images/reach-favicon.png');
+        padding-right: 4px;
+      }
+      a {
+        font-weight: normal;
+        .reach-letters {
+          color: $reach-orange;
+          font-style: italic;
+        }
+      }
+    }
+  }
+}
 @import "partials/media"; // keep at bottom;

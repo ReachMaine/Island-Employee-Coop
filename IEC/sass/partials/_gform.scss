@@ -1,5 +1,24 @@
 /* gravity forms styling */
 .gform_wrapper {
+	.gfield.hide-label label,
+	.gfield.hide-label .ginput_complex.ginput_container  label {
+		display: none;
+	}
+	.gfield {
+//		.ginput_complex.ginput_container input,
+		.ginput_container,
+		.ginput_complex {
+			input,
+			textarea
+ 			{
+				padding: 14px 0 14px 14px!important;
+			}
+			select {
+					margin-top: 0px!important;
+					padding: 14px 0 12px 14px!important;
+			}
+		}
+	}
 	.gform_footer {
 
 		input[type=submit] { //  Make submit look like buttons on the site.

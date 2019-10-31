@@ -10,6 +10,14 @@
     margin-right: 30px;
   }
 }
+@media all and (min-width: 981px) { // desktop
+  .iec-map-colht.et_pb_map_container {
+    height: 100%;
+    .et_pb_map {
+      height: 100%;
+    }
+  }
+}
 @media all and (max-width: 980px) { // woo stuff & hamberger menu
   // size of logo at laptop and smaller
   #main-header {
@@ -28,6 +36,21 @@
 }
 @media only screen and (max-width: 960px) {
 
+}
+
+
+@media only all  and (max-width: 767px){
+  // center footer widgets at mobile
+  #main-footer {
+    #footer-widgets {
+      .footer-widget {
+        .fwidget.et_pb_widget {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
 }
 @media only all  and (max-width: 767px) and (min-width: 480px) {
   .et_pb_tabs.iec-tab-image-spacing {
